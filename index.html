@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .nav-link.active {
+            color: #51a69f !important;
+        }
+
+        .app_about_me-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .app_about_me-text {
+            flex: 1;
+        }
+
+        .app__about_me_image {
+            width: 450px;
+            height: 450px;
+            margin-left: 20px;
+        }
+
+        /* Ekran boyutuna göre resim ve metin düzenlemesi */
+        @media (max-width: 768px) {
+            .app_about_me-info {
+                flex-direction: column;
+            }
+
+            .app__about_me_image {
+                margin-left: 0;
+                margin-top: 20px;
+                float: none;
+                width: 100%;
+                height:max-content;
+                max-width: 450px;
+            }
+            .app__about_image{
+              margin-left: 0;
+                margin-top: 20px;
+                float: none;
+                width: 100%;
+                height:max-content;
+                max-width: 450px;
+            }
+        }
+        p{
+          font-size: 35px;
+         
+        }
+        h1{
+          font-weight: bold;
+        }
+        .btn-lg {
+            width: 250px;
+            height: 60px;
+            padding: 0;
+            font-size: 1.5rem;
+            margin-left: 45px;
+            display: inline-block;
+            background-color: #51a69f;
+        }
+         .button-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-left: 400px;
+        }
+
+        .button-container button {
+            margin-left: 20px;
+        }
+        
+             
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">İREM ATLI</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav fw-bold ">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skill">Skill</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#project">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#socialmedia">Social Media</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </nav>  
+    <br><br><br><br><br><br><br><br><br>
+    <div class="container app_about_me">
+        <div class="app_about_me-info">
+
+            <div class="app_about_me-text">
+                <h2>Hello Everyone, I am </h2><br>
+                <h1>İREM ATLI</h1><br><br>
+                <p>Who am I and what do I like to do. I will tell you about myself. What are my abilities? Let's explore together. Keep scrolling the page!</p>
+            </div>
+
+            <img class="app__about_me_image" src="image/foto.jpeg" alt="My photo" />
+        </div>
+    </div>
+    <div class="button-container">
+    <button type="button" class="btn btn-primary btn-lg">Download Cv</button>
+    <button type="button" class="btn btn-secondary btn-lg">Explore More</button>
+
+
+    </div><br><br>
+    <section class="container py-5" id="about">
+      <div class="text-center py-5">
+        <h1 class="fw-bold">About Me?</h1></div>
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img fluid" src="image/about.png">
+        </div>
+        <div class="col-lg-7 offset-lg-1">
+          <h2 style="font-weight: lighter;">Hi, I'm Irem Atli. 4. i am a Computer Engineering student in the classroom. 
+            I live in Samsun with my family. I love my part. I am trying to attend trainings and courses to improve myself in my field. 
+            I'm also trying to learn the language. English Spanish was my first goal and then I want to learn Spanish.
+             I also like walking and cycling as hobbies outside of school. 
+             I would like to take a closer look at the areas I am interested in and the projects I have done,
+              to tell you about the areas I am interested in and the projects I have done.
+              Keep scrolling if you want too!</h2>
+        </div>
+      </div>
+      <section class="container py-5" id="skill">
+        <div class="text-center py-5">
+          <h1 class="fw-bold">Skills</h1>
+        </div>
+        <h3 class="text-center">What I am capable of?</h3><br><br>
+      
+        <div class="image-container d-flex justify-content-center flex-wrap">
+          <img class="img-fluid" src="image/html-5.svg" style="margin-right: 20px">
+          <img class="img-fluid" src="image/css-3.svg" style="margin: right 20px;" >
+          <img class="img-fluid" src="image/bootstrap.svg" style="margin-right: 20px" >
+          <img class="img-fluid" src="image/java-script.svg" style="margin-right: 20px">
+          <img class="img-fluid" src="image/php.svg" style="margin-right: 20px" >
+          <img class="img-fluid" src="image/hashtag.svg" style="margin-right: 20px">
+        </div>
+      </section>
+      
+      
+
+      <section class="container py-5 " id="project">
+        <div class="text-center py-5">
+          <h1 class="fw-bold">Project</h1>
+        </div>
+        <div class="image-container d-flex justify-content-center flex-wrap"></div>
+        <img class="img-fluid" src="image/Group 7.svg" style="margin-right: 50px" title="HTML">
+        <img class="img-fluid" src="image/Group 8.svg">
+      </section>
+
+      <section class="container py-5 " id="socialmedia">
+        <div class="text-center py-5">
+          <h1 class="fw-bold">Social Media</h1><br><br><br>
+      <a href = "https://www.instagram.com/irematli"target="_blank" target="blank"><img class="app_projects_image" style="width: 150px; height: 150px; float: left; margin-right: 175px;" src="image/instagram-logo.png"/> </a>
+      <a href="https://twitter.com/iremattli"target="_blank"><img class="app__projects_image" style="width: 150px; height: 150px; float: left; margin-right: 175px;" src="image/twitter.png"/></a>
+      <a href="https://www.linkedin.com/in/irem-atl%C4%B1-a096691a7//"><img class="app__projects_image" style="width: 150px; height: 150px; float: left; margin-right: 175px;" src="image/linkedin.png" /> </a>
+      <a href="https://github.com/irematlii"target="_blank"><img class="app__projects_image" style="width: 150px; height: 150px; float: left; margin-right: 15px;" src="image/github.png"/></a>
+      
+        </section>
+        <br><br><br>
+      <section class="container py-5" id="contact">
+        <div class="text-center py-5">
+          <h1 class="fw-bold">Contact</h1>
+        </div>
+        <div class="col-xxl col-xl-7 col-lg-8 col-md-9 col-sm-10 col-11 mx-auto">
+          <form >
+            <div class="mb-3">
+              <label class="form-label">Name/Surname</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Subject</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Message</label>
+              <textarea type="text" class="form-control" row="5"></textarea>
+            </div>
+            <button class=""btn btn-danger btn-lg>Send Message</button>
+          </form>
+        </div>
+
+      </section><br><br><br><br><br><br>
+      <footer >
+        <div class="text-center">
+          <h6>Copyright © 2023. Develop & Designed by İrem Atlı</h6>
+
+        </div>
+      </footer>
+      
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
